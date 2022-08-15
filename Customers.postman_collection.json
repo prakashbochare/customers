@@ -1,0 +1,256 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Customers",
+		"_postman_id": "cb9d9e3b-704a-5f27-9030-42b6b40eeb08",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"url": "localhost/customers/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "prakash patil",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "patil.prakash7@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "User Register"
+			},
+			"response": []
+		},
+		{
+			"name": "Loan Request",
+			"request": {
+				"url": "localhost/customers/api/loan-request",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "term",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Loan Request"
+			},
+			"response": []
+		},
+		{
+			"name": "Loan List",
+			"request": {
+				"url": "localhost/customers/api/loan-list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "term",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Loan List"
+			},
+			"response": []
+		},
+		{
+			"name": "Aproved Loan Status",
+			"request": {
+				"url": "localhost/customers/api/aproved-loan-status",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Aproved Loan Status"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer View Loan / user_id",
+			"request": {
+				"url": "localhost/customers/api/customer-view-loan/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Customer View Loan"
+			},
+			"response": []
+		},
+		{
+			"name": "Loan Repayments List / loan_id",
+			"request": {
+				"url": "localhost/customers/api/loan-repayments-list/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Loan Repayments List / loan_id"
+			},
+			"response": []
+		},
+		{
+			"name": "Repayment Customer",
+			"request": {
+				"url": "localhost/customers/api/repayment-customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "loan_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "3333.3333333333",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Repayment Customer"
+			},
+			"response": []
+		}
+	]
+}
